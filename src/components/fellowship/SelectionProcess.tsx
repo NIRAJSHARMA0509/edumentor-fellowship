@@ -86,32 +86,6 @@ const SelectionProcess = () => {
             ))}
           </div>
         </div>
-
-        {/* Available slots */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/20">
-            <h3 className="text-xl font-display font-bold text-primary-foreground mb-4">
-              Book Your Assessment Slot
-            </h3>
-            <p className="text-primary-foreground/70 font-body mb-6">
-              Assessment and interview sessions available every weekend
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <div className="bg-gold/20 text-gold px-4 py-2 rounded-full font-medium">
-                Saturday & Sunday
-              </div>
-              <div className="bg-primary-foreground/10 text-primary-foreground/80 px-4 py-2 rounded-full">
-                9:00 AM - 10:00 AM (UK)
-              </div>
-              <div className="bg-primary-foreground/10 text-primary-foreground/80 px-4 py-2 rounded-full">
-                10:00 AM - 11:00 AM (UK)
-              </div>
-              <div className="bg-primary-foreground/10 text-primary-foreground/80 px-4 py-2 rounded-full">
-                3:00 PM - 4:00 PM (UK)
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

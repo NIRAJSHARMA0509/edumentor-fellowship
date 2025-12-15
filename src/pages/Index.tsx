@@ -4,6 +4,7 @@ import HeroSection from "@/components/fellowship/HeroSection";
 import WhoShouldApply from "@/components/fellowship/WhoShouldApply";
 import CurriculumPillars from "@/components/fellowship/CurriculumPillars";
 import SelectionProcess from "@/components/fellowship/SelectionProcess";
+import BookingSection from "@/components/fellowship/BookingSection";
 import Testimonials from "@/components/fellowship/Testimonials";
 import GuaranteeSection from "@/components/fellowship/GuaranteeSection";
 import FAQSection from "@/components/fellowship/FAQSection";
@@ -33,6 +34,9 @@ const Index = () => {
           </section>
           <section id="selection">
             <SelectionProcess />
+          </section>
+          <section id="booking">
+            <BookingSection />
           </section>
           <section id="testimonials">
             <Testimonials />

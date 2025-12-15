@@ -2,20 +2,20 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Chen",
+    name: "Rayan Saith",
     role: "Pre-University Student",
-    university: "Accepted to University of Cambridge",
-    quote: "The Edumentor Fellowship completely transformed how I approach learning. Professor Faulkner's Oxford-style tutorials taught me to think critically and articulate my ideas with precision. The combination of classical philosophy and modern AI understanding gave me a unique edge in my Cambridge interview.",
+    university: "Trinity College Dublin",
+    quote: "The Edumentor Fellowship completely transformed how I approach learning. Professor Faulkner's Oxford-style tutorials taught me to think critically and articulate my ideas with precision. The combination of classical philosophy and modern AI understanding gave me a unique edge in my university interview.",
     rating: 5,
-    avatar: "SC"
+    avatar: "RS"
   },
   {
-    name: "Marcus Williams",
+    name: "Mohit Sharma",
     role: "Graduate Student",
-    university: "MSc Data Science, Imperial College London",
+    university: "MSc Marketing",
     quote: "As someone from a non-technical background, Pillar II was a revelation. Dishant's approach to explaining complex AI concepts without requiring coding skills was brilliant. I now confidently engage with technical teams at work and have implemented several AI-driven solutions in my research.",
     rating: 5,
-    avatar: "MW"
+    avatar: "MS"
   }
 ];
 
