@@ -128,17 +128,6 @@ const BookingSection = () => {
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
 
-          {/* Features */}
-          <div className="flex flex-wrap justify-center gap-6 mt-12">
-            <div className="flex items-center gap-2 text-primary-foreground/70 bg-primary-foreground/5 px-4 py-2 rounded-full">
-              <Clock className="w-5 h-5 text-gold" />
-              <span className="font-body text-sm">15-minute assessment</span>
-            </div>
-            <div className="flex items-center gap-2 text-primary-foreground/70 bg-primary-foreground/5 px-4 py-2 rounded-full">
-              <Sparkles className="w-5 h-5 text-gold" />
-              <span className="font-body text-sm">Weekend slots available</span>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -150,7 +139,7 @@ const BookingSection = () => {
               {step === 1 ? (
                 <>
                   <Calendar className="w-6 h-6 text-primary" />
-                  Select Your Slot
+                  Select Time Slot for Selection Interview
                 </>
               ) : (
                 <>

@@ -39,18 +39,6 @@ const CTASection = () => {
             Book your assessment slot and discover if the Edumentor Fellowship is your path to mastery.
           </p>
 
-          {/* Available slots info */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10">
-            <div className="flex items-center gap-2 text-primary-foreground/70 bg-primary-foreground/5 px-4 py-2 rounded-full">
-              <Calendar className="w-5 h-5 text-gold" />
-              <span className="font-body text-sm">Saturdays & Sundays</span>
-            </div>
-            <div className="flex items-center gap-2 text-primary-foreground/70 bg-primary-foreground/5 px-4 py-2 rounded-full">
-              <Clock className="w-5 h-5 text-gold" />
-              <span className="font-body text-sm">9AM, 10AM, or 3PM (UK Time)</span>
-            </div>
-          </div>
-
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -63,23 +51,6 @@ const CTASection = () => {
             </Button>
           </div>
 
-          {/* Trust indicators */}
-          <div className="mt-12 pt-10 border-t border-primary-foreground/10">
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold text-gold mb-1">14</div>
-                <div className="text-sm text-primary-foreground/60">Live Tutorials</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold text-gold mb-1">2</div>
-                <div className="text-sm text-primary-foreground/60">Expert Tutors</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold text-gold mb-1">100%</div>
-                <div className="text-sm text-primary-foreground/60">Satisfaction Rate</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
