@@ -61,7 +61,7 @@ const CTASection = () => {
 
           {/* Trust indicators */}
           <div className="mt-12 pt-10 border-t border-primary-foreground/10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-display font-bold text-gold mb-1">14</div>
                 <div className="text-sm text-primary-foreground/60">Live Tutorials</div>
@@ -73,10 +73,6 @@ const CTASection = () => {
               <div className="text-center">
                 <div className="text-3xl font-display font-bold text-gold mb-1">100%</div>
                 <div className="text-sm text-primary-foreground/60">Satisfaction Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold text-gold mb-1">$3K</div>
-                <div className="text-sm text-primary-foreground/60">Investment</div>
               </div>
             </div>
           </div>

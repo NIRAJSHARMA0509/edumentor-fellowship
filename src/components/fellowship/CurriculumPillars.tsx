@@ -1,4 +1,6 @@
-import { Brain, Cpu, BookOpen, Lightbulb, Search, Target, Timer, Sparkles, Bot, MessageSquare, Rocket, User } from "lucide-react";
+import { Brain, Cpu, BookOpen, Lightbulb, Search, Target, Timer, Sparkles, Bot, MessageSquare, Rocket } from "lucide-react";
+import davidFaulkner from "@/assets/david-faulkner.jpg";
+import dishantKharbanda from "@/assets/dishant-kharbanda.jpg";
 
 const pillar1Modules = [
   { icon: Lightbulb, title: "Creativity: The Essence of Ideas", desc: "Exploring the mechanics of innovation and generating original, high-impact ideas." },
@@ -20,10 +22,14 @@ const pillar2Modules = [
   { icon: Rocket, title: "Sustained Innovation", desc: "Developing frameworks for continuously integrating and leveraging emerging technologies." },
 ];
 
-const TutorCard = ({ name, title, role }: { name: string; title: string; role: string }) => (
+const TutorCard = ({ name, title, role, image }: { name: string; title: string; role: string; image: string }) => (
   <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-border/50 mb-8">
-    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-navy to-primary flex items-center justify-center flex-shrink-0">
-      <User className="w-8 h-8 text-primary-foreground" />
+    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold/30">
+      <img 
+        src={image} 
+        alt={name}
+        className="w-full h-full object-cover object-top scale-125"
+      />
     </div>
     <div>
       <h4 className="font-display font-bold text-foreground">{name}</h4>
@@ -68,6 +74,7 @@ const CurriculumPillars = () => {
                   name="Professor David Oakley Faulkner"
                   title="Former Director of MBA, University of Oxford"
                   role="Chief Professor Mentor at Edumentor"
+                  image={davidFaulkner}
                 />
 
                 <div className="space-y-4">
@@ -107,6 +114,7 @@ const CurriculumPillars = () => {
                   name="Dishant Kharbanda"
                   title="Serial Entrepreneur and Educationist"
                   role="Chief Student Mentor at Edumentor"
+                  image={dishantKharbanda}
                 />
 
                 <div className="space-y-4">
