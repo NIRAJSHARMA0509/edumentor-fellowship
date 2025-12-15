@@ -87,7 +87,6 @@ const CurriculumPillars = () => {
                   role="Chief Professor Mentor at Edumentor"
                   roleLink="https://davidfaulkner-oxford.com/"
                   image={davidFaulkner}
-                  zoomMore
                 />
 
                 <div className="space-y-4">
