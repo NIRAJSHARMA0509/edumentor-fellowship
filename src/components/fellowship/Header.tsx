@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useBooking } from "@/contexts/BookingContext";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openBookingDialog } = useBooking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +15,11 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleApplyClick = () => {
+    setIsMobileMenuOpen(false);
+    openBookingDialog();
+  };
 
   return (
     <header 
@@ -69,6 +76,7 @@ const Header = () => {
             </a>
             <Button 
               size="sm"
+              onClick={openBookingDialog}
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
             >
               Apply Now
@@ -120,7 +128,10 @@ const Header = () => {
               >
                 FAQ
               </a>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium mt-2">
+              <Button 
+                onClick={handleApplyClick}
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium mt-2"
+              >
                 Apply Now
               </Button>
             </nav>

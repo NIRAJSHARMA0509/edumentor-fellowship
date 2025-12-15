@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { BookingProvider } from "@/contexts/BookingContext";
 import Header from "@/components/fellowship/Header";
 import HeroSection from "@/components/fellowship/HeroSection";
 import WhoShouldApply from "@/components/fellowship/WhoShouldApply";
@@ -24,31 +25,33 @@ const Index = () => {
         <link rel="canonical" href="https://www.edumentor.io/fellowship" />
       </Helmet>
 
-      <div className="min-h-screen bg-background">
-        <Header />
-        <main>
-          <HeroSection />
-          <WhoShouldApply />
-          <section id="curriculum">
-            <CurriculumPillars />
-          </section>
-          <section id="selection">
-            <SelectionProcess />
-          </section>
-          <section id="booking">
-            <BookingSection />
-          </section>
-          <section id="testimonials">
-            <Testimonials />
-          </section>
-          <GuaranteeSection />
-          <section id="faq">
-            <FAQSection />
-          </section>
-          <CTASection />
-        </main>
-        <Footer />
-      </div>
+      <BookingProvider>
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main>
+            <HeroSection />
+            <WhoShouldApply />
+            <section id="curriculum">
+              <CurriculumPillars />
+            </section>
+            <section id="selection">
+              <SelectionProcess />
+            </section>
+            <section id="booking">
+              <BookingSection />
+            </section>
+            <section id="testimonials">
+              <Testimonials />
+            </section>
+            <GuaranteeSection />
+            <section id="faq">
+              <FAQSection />
+            </section>
+            <CTASection />
+          </main>
+          <Footer />
+        </div>
+      </BookingProvider>
     </>
   );
 };

@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock, Sparkles } from "lucide-react";
+import { useBooking } from "@/contexts/BookingContext";
 
 const CTASection = () => {
+  const { openBookingDialog } = useBooking();
+
   return (
     <section className="py-20 lg:py-28 gradient-hero relative overflow-hidden">
       {/* Decorative elements */}
@@ -52,6 +55,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
+              onClick={openBookingDialog}
               className="bg-gold hover:bg-gold/90 text-navy font-bold text-lg px-10 py-7 shadow-elevated transition-all duration-300 hover:scale-105"
             >
               Apply for the Fellowship
