@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, GraduationCap, Sparkles } from "lucide-react";
+import { useBooking } from "@/contexts/BookingContext";
 
 const HeroSection = () => {
+  const { openBookingDialog } = useBooking();
+
   return (
     <section className="relative min-h-[90vh] flex items-center gradient-hero overflow-hidden">
       {/* Decorative elements */}
@@ -61,6 +64,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 animation-delay-400">
             <Button 
               size="lg" 
+              onClick={openBookingDialog}
               className="bg-gold hover:bg-gold/90 text-navy font-semibold text-lg px-8 py-6 shadow-elevated transition-all duration-300 hover:scale-105 hover:shadow-glow"
             >
               Apply for the Fellowship

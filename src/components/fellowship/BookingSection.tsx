@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Calendar, Clock, User, Mail, Phone, GraduationCap, CheckCircle, ArrowRight, ArrowLeft, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { useBooking } from "@/contexts/BookingContext";
 
 const timeSlots = ["9:00 AM", "10:00 AM", "3:00 PM"];
 
@@ -42,7 +43,7 @@ const formatDate = (date: Date): string => {
 
 const BookingSection = () => {
   const weekendDates = useMemo(() => getNextTwoWeekends(), []);
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, openBookingDialog, closeBookingDialog } = useBooking();
   const [step, setStep] = useState<1 | 2>(1);
   const [selectedSlot, setSelectedSlot] = useState<{ date: Date; time: string } | null>(null);
   const [formData, setFormData] = useState({
@@ -58,13 +59,8 @@ const BookingSection = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleOpenDialog = () => {
-    setIsOpen(true);
-    setStep(1);
-  };
-
   const handleCloseDialog = () => {
-    setIsOpen(false);
+    closeBookingDialog();
     setStep(1);
     setSelectedSlot(null);
     setFormData({
@@ -123,7 +119,7 @@ const BookingSection = () => {
           </p>
 
           <Button 
-            onClick={handleOpenDialog}
+            onClick={openBookingDialog}
             size="lg"
             className="bg-gold hover:bg-gold/90 text-navy font-bold text-lg px-10 py-7 shadow-elevated transition-all duration-300 hover:scale-105"
           >
@@ -147,7 +143,7 @@ const BookingSection = () => {
       </div>
 
       {/* Booking Dialog */}
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <Dialog open={isOpen} onOpenChange={(open) => !open && handleCloseDialog()}>
         <DialogContent className="sm:max-w-lg bg-card border-border">
           <DialogHeader>
             <DialogTitle className="text-2xl font-display font-bold text-foreground flex items-center gap-3">
