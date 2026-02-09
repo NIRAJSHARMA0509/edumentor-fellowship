@@ -30,7 +30,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Socratic Fellowship" 
-              className="h-10 w-auto"
+              className="h-14 w-auto mix-blend-multiply"
             />
           </a>
 
