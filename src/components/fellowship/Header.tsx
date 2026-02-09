@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 import logo from "@/assets/socratic-fellowship-logo.png";
 
 const Header = () => {
@@ -26,11 +25,12 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <a href="/" className={`flex items-center gap-2 transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
             <img 
               src={logo} 
               alt="Socratic Fellowship" 
-              className="h-14 w-auto mix-blend-multiply"
+              className="h-16 w-auto"
+              style={{ filter: "drop-shadow(0 0 0 transparent)" }}
             />
           </a>
 
@@ -44,14 +44,6 @@ const Header = () => {
             >
               Curriculum
             </a>
-            <Link 
-              to="/programme"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isScrolled ? "text-foreground/70" : "text-primary-foreground/80"
-              }`}
-            >
-              Programme
-            </Link>
             <a 
               href="#testimonials" 
               className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -102,13 +94,6 @@ const Header = () => {
               >
                 Curriculum
               </a>
-              <Link 
-                to="/programme"
-                className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Programme
-              </Link>
               <a 
                 href="#testimonials" 
                 className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"

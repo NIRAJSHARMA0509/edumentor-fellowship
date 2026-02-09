@@ -1,4 +1,5 @@
-import { Brain, Cpu, BookOpen, Lightbulb, Search, Target, Timer, Sparkles, Bot, MessageSquare, Rocket } from "lucide-react";
+import { Brain, Cpu, BookOpen, Lightbulb, Search, Target, Timer, Sparkles, Bot, MessageSquare, Rocket, CalendarDays } from "lucide-react";
+import { Link } from "react-router-dom";
 import davidFaulkner from "@/assets/david-faulkner.jpg";
 import dishantKharbanda from "@/assets/dishant-kharbanda.jpg";
 
@@ -133,6 +134,17 @@ const CurriculumPillars = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Programme Calendar Button */}
+        <div className="text-center mt-12">
+          <Link
+            to="/programme"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg shadow-elevated transition-all duration-300 hover:scale-105"
+          >
+            <CalendarDays className="w-5 h-5" />
+            Programme Calendar
+          </Link>
         </div>
       </div>
     </section>
