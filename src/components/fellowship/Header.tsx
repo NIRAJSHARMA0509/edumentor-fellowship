@@ -29,8 +29,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Socratic Fellowship" 
-              className="h-16 w-auto"
-              style={{ filter: "drop-shadow(0 0 0 transparent)" }}
+              className="h-16 w-auto bg-white rounded-lg p-1"
             />
           </a>
 
