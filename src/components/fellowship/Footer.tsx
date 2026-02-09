@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="Socratic Fellowship" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Socratic Fellowship" className="h-16 w-auto mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/60 font-body max-w-md leading-relaxed mb-6">
               The Socratic Fellowship is a prestigious academic programme blending 
               timeless philosophical inquiry with advanced modern computing, 
