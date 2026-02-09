@@ -22,30 +22,18 @@ const pillar2Modules = [
   { icon: Rocket, title: "Sustained Innovation", desc: "Developing frameworks for continuously integrating and leveraging emerging technologies." },
 ];
 
-const TutorCard = ({ name, title, role, roleLink, image, zoomMore }: { name: string; title: string; role: string; roleLink?: string; image: string; zoomMore?: boolean }) => (
+const TutorCard = ({ name, title, image }: { name: string; title: string; image: string }) => (
   <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-border/50 mb-8">
     <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold/30">
       <img 
         src={image} 
         alt={name}
-        className={`w-full h-full object-cover object-top ${zoomMore ? 'scale-[2.2] translate-y-3' : 'scale-125'}`}
+        className="w-full h-full object-cover object-top scale-125"
       />
     </div>
     <div>
       <h4 className="font-display font-bold text-foreground">{name}</h4>
       <p className="text-sm text-muted-foreground">{title}</p>
-      {roleLink ? (
-        <a 
-          href={roleLink} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-xs text-primary font-medium mt-1 hover:underline inline-block"
-        >
-          {role}
-        </a>
-      ) : (
-        <p className="text-xs text-primary font-medium mt-1">{role}</p>
-      )}
     </div>
   </div>
 );
@@ -84,8 +72,6 @@ const CurriculumPillars = () => {
                 <TutorCard 
                   name="Professor David Oakley Faulkner"
                   title="Former Director of MBA, University of Oxford"
-                  role="Chief Professor Mentor at Edumentor"
-                  roleLink="https://davidfaulkner-oxford.com/"
                   image={davidFaulkner}
                 />
 
@@ -123,9 +109,8 @@ const CurriculumPillars = () => {
                 </h3>
 
                 <TutorCard 
-                  name="Dishant Kharbanda"
-                  title="Serial Entrepreneur and Educationist"
-                  role="Chief Student Mentor at Edumentor"
+                  name="Professor Laxmi Narayan"
+                  title="IIM Calcutta"
                   image={dishantKharbanda}
                 />
 

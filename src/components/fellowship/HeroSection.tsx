@@ -1,10 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, GraduationCap, Sparkles } from "lucide-react";
-import { useBooking } from "@/contexts/BookingContext";
+import { Award, GraduationCap, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
-  const { openBookingDialog } = useBooking();
-
   return (
     <section className="relative min-h-[90vh] flex items-center gradient-hero overflow-hidden">
       {/* Decorative elements */}
@@ -26,12 +22,12 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-gold/20 border border-gold/30 backdrop-blur-sm animate-fade-up opacity-0">
             <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-sm font-medium text-gold-light tracking-wide uppercase">Exclusive Academic Accelerator</span>
+            <span className="text-sm font-medium text-gold-light tracking-wide uppercase">Prestigious Academic Programme</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6 animate-fade-up opacity-0 animation-delay-100">
-            The Edumentor{" "}
+            The Socratic{" "}
             <span className="relative">
               Fellowship
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
@@ -42,10 +38,11 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/80 font-body font-light max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-up opacity-0 animation-delay-200">
-            Cultivating the Next Generation of Intellectual Leaders through a unique blend of 
+            A three-week intensive programme blending 
             <span className="font-medium text-gold-light"> timeless philosophical inquiry </span> 
-            and 
-            <span className="font-medium text-gold-light"> cutting-edge modern computing</span>.
+            with 
+            <span className="font-medium text-gold-light"> advanced modern computing</span>, 
+            delivered through our global network of campus partners.
           </p>
 
           {/* Features */}
@@ -62,21 +59,18 @@ const HeroSection = () => {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 animation-delay-400">
-            <Button 
-              size="lg" 
-              onClick={openBookingDialog}
-              className="bg-gold hover:bg-gold/90 text-navy font-semibold text-lg px-8 py-6 shadow-elevated transition-all duration-300 hover:scale-105 hover:shadow-glow"
+            <a 
+              href="#partners"
+              className="inline-flex items-center justify-center bg-gold hover:bg-gold/90 text-navy font-semibold text-lg px-8 py-4 rounded-lg shadow-elevated transition-all duration-300 hover:scale-105 hover:shadow-glow"
             >
-              Apply for the Fellowship
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-gold/50 text-gold hover:bg-gold/10 font-medium text-lg px-8 py-6 backdrop-blur-sm"
+              Find a Campus
+            </a>
+            <a 
+              href="#partner-enquiry"
+              className="inline-flex items-center justify-center border-2 border-gold/50 text-gold hover:bg-gold/10 font-medium text-lg px-8 py-4 rounded-lg backdrop-blur-sm transition-all duration-300"
             >
-              Learn More
-            </Button>
+              Become a Partner
+            </a>
           </div>
         </div>
       </div>
