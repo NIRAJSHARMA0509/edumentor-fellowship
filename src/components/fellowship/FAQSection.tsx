@@ -7,59 +7,62 @@ import {
 
 const faqs = [
   {
-    category: "Program Format & Methodology",
+    category: "Programme Format & Delivery",
     questions: [
       {
-        question: "Is the Fellowship LIVE or self-paced?",
-        answer: "The Edumentor Fellowship utilizes a hybrid high-impact model, combining the flexibility of self-paced learning with the intensity of live academic discourse. Core theoretical materials are available for deep study at your own pace, while each module culminates in a mandatory Live Case Study Tutorial conducted either one-on-one or in highly selective micro-groups (maximum 4 Fellows)."
+        question: "How is the Socratic Fellowship delivered?",
+        answer: "The Socratic Fellowship is a three-week intensive residential programme delivered through our global network of campus partners — established schools, universities, and summer programme providers. The academic content, curriculum, and faculty are centrally managed by the Fellowship, while our partners provide the campus facilities and student cohorts."
       },
       {
         question: "What are \"Oxford-Style Tutorials\"?",
-        answer: "Modeled after the pedagogical gold standard of the University of Oxford, these are not standard lectures. They are interactive, Socratic interrogations of the material. For every module, you will analyze a specific case study and defend your position to your tutor. This method is designed to forge superior articulation, defense, and critical reasoning skills."
-      }
-    ]
-  },
-  {
-    category: "Duration & Commitment",
-    questions: [
-      {
-        question: "How long does the program take to complete?",
-        answer: "The program is designed for flexibility without compromising rigor. Accelerated Track: For those working with high intensity, the program can be completed in a minimum of 14 weeks (one module per week). Extended Track: Fellows balancing other significant commitments may take up to 1 year. Certification is contingent upon successful completion of all 14 Mandatory Case Study Tutorials."
-      }
-    ]
-  },
-  {
-    category: "Tuition & Financial Aid",
-    questions: [
-      {
-        question: "What is the tuition fee for the Fellowship?",
-        answer: "The investment for the Edumentor Fellowship is $3,000 USD. This fee covers all self-paced materials, access to the 14 Live Oxford-Style Tutorials, personal mentorship, and certification."
+        answer: "Modelled after the pedagogical gold standard of the University of Oxford, these are not standard lectures. They are interactive, Socratic interrogations of the material. For every module, participants analyse a specific case study and defend their position to their tutor. This method is designed to forge superior articulation, defence, and critical reasoning skills."
       },
       {
-        question: "Are scholarships or financial aid available?",
-        answer: "Yes, we are committed to ensuring that exceptional potential is not hindered by financial constraints. Merit-Based Scholarships: Candidates demonstrating outstanding promise during the interview may apply for a fee waiver of up to 50%. The \"Young Scholar\" Full Sponsorship: We reserve two spots annually for fully sponsored fellowships (100% fee waiver) for exceptional young students under 17."
+        question: "How is the three-week programme structured?",
+        answer: "The programme spans 15 working days across three weeks (Monday to Friday), with two full weekends in between — totalling 19 days. Each day features four structured sessions: a lecture with discussion, project work, tutorials, and academic writing. Day 0 (arrival weekend) serves as orientation."
       }
     ]
   },
   {
-    category: "Admissions & Eligibility",
+    category: "Fellowship Credentials",
     questions: [
       {
-        question: "Who is the ideal candidate for the Edumentor Fellowship?",
-        answer: "The Fellowship is designed for intellectually curious individuals who are dissatisfied with surface-level learning. We welcome high-potential school students aiming for top-tier global universities, university students seeking to master academic rigour, and professionals looking to sharpen critical thinking and master modern technological frameworks."
+        question: "What credentials do participants receive?",
+        answer: "There are two tiers of recognition. All participants who complete the three-week programme receive a Socratic Fellowship Summer Programme Certificate and a personal reference letter from their tutor. Those who wish to earn the full Socratic Fellowship Award must complete an additional 15,000-word academic dissertation."
       },
       {
-        question: "Why is there a selection process?",
-        answer: "To maintain the prestige and academic integrity of the cohort, we cannot accept every applicant. The Fellowship thrives on high-level discourse, which requires every participant to be at a similar level of intellectual commitment. The preliminary test and interview ensure that every Fellow is ready to handle the curriculum and contribute meaningfully."
+        question: "What is required for the full Fellowship Award?",
+        answer: "After completing the three-week intensive programme, participants may opt to undertake a 15,000-word academic dissertation reflecting on the concepts learned. This is supervised by a dedicated academic supervisor, with tutorials continuing over nine additional months. The cost for this academic supervision is US $2,000."
+      },
+      {
+        question: "Is the dissertation mandatory?",
+        answer: "No. The dissertation is entirely optional. Participants who are content with the Summer Programme Certificate and tutor reference are not required to pursue the full Fellowship Award. It is designed for those seeking the highest level of academic distinction."
       }
     ]
   },
   {
-    category: "Refunds & Policies",
+    category: "Campuses & Pricing",
     questions: [
       {
-        question: "What is the \"No-Risk\" Refund Policy?",
-        answer: "We operate on a policy of mutual fit and absolute confidence in our quality. Student Guarantee: If, after the first session, you feel the program does not meet your expectations, you may withdraw immediately for a full refund, no questions asked. Academic Standard Guarantee: If tutors determine a candidate lacks necessary foundational readiness, we will provide a full refund."
+        question: "How do I choose a campus?",
+        answer: "Students select from our network of partner campuses worldwide. Each campus offers the programme during different periods (summer or winter breaks) and in different locations. You can browse available campuses and choose based on country, timing, and preferences."
+      },
+      {
+        question: "How much does the programme cost?",
+        answer: "The programme fee varies by campus, as it includes boarding, lodging, and facilities provided by the partner institution. Each campus sets its own pricing structure. Please check with your chosen campus for specific fees."
+      }
+    ]
+  },
+  {
+    category: "For Partner Institutions",
+    questions: [
+      {
+        question: "How can my institution become a partner?",
+        answer: "We welcome enquiries from established high schools, universities, and summer programme providers worldwide. As a delivery partner, you provide the students and campus facilities while we supply the complete academic programme — curriculum, faculty, and content. Submit an enquiry through our partner form to arrange an introductory call."
+      },
+      {
+        question: "What does the partnership involve?",
+        answer: "Partners provide the physical campus, student accommodation, and recruit students for the programme. The Socratic Fellowship provides all academic content, the curriculum design, and the teaching faculty. The programme runs as a three-week intensive during summer or winter breaks."
       }
     ]
   }
@@ -77,7 +80,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground font-body">
-            Everything you need to know about the Edumentor Fellowship program.
+            Everything you need to know about the Socratic Fellowship programme.
           </p>
         </div>
 

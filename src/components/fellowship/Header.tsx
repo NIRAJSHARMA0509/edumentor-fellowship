@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useBooking } from "@/contexts/BookingContext";
+import { Link } from "react-router-dom";
+import logo from "@/assets/socratic-fellowship-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { openBookingDialog } = useBooking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +14,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleApplyClick = () => {
-    setIsMobileMenuOpen(false);
-    openBookingDialog();
-  };
 
   return (
     <header 
@@ -33,11 +27,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className={`text-2xl font-display font-bold transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}>
-              edu<span className="text-primary">Mentor</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="Socratic Fellowship" 
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -50,14 +44,14 @@ const Header = () => {
             >
               Curriculum
             </a>
-            <a 
-              href="#selection" 
+            <Link 
+              to="/programme"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isScrolled ? "text-foreground/70" : "text-primary-foreground/80"
               }`}
             >
-              Selection
-            </a>
+              Programme
+            </Link>
             <a 
               href="#testimonials" 
               className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -67,6 +61,14 @@ const Header = () => {
               Testimonials
             </a>
             <a 
+              href="#partners" 
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isScrolled ? "text-foreground/70" : "text-primary-foreground/80"
+              }`}
+            >
+              Partners
+            </a>
+            <a 
               href="#faq" 
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isScrolled ? "text-foreground/70" : "text-primary-foreground/80"
@@ -74,13 +76,6 @@ const Header = () => {
             >
               FAQ
             </a>
-            <Button 
-              size="sm"
-              onClick={openBookingDialog}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-            >
-              Apply Now
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -107,13 +102,13 @@ const Header = () => {
               >
                 Curriculum
               </a>
-              <a 
-                href="#selection" 
+              <Link 
+                to="/programme"
                 className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Selection
-              </a>
+                Programme
+              </Link>
               <a 
                 href="#testimonials" 
                 className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"
@@ -122,18 +117,19 @@ const Header = () => {
                 Testimonials
               </a>
               <a 
+                href="#partners" 
+                className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Partners
+              </a>
+              <a 
                 href="#faq" 
                 className="text-foreground/80 font-medium py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 FAQ
               </a>
-              <Button 
-                onClick={handleApplyClick}
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium mt-2"
-              >
-                Apply Now
-              </Button>
             </nav>
           </div>
         )}
