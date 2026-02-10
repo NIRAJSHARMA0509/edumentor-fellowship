@@ -244,8 +244,8 @@ const weekendActivities = [
   { icon: GraduationCap, title: "Campus Leisure", desc: "Access to university facilities and networking mixers with local students and faculty." },
 ];
 
-const DayCard = ({ day, isLast }: { day: typeof weeks[0]['days'][0]; isLast: boolean }) => {
-  const [expanded, setExpanded] = useState(false);
+const DayCard = ({ day }: { day: typeof weeks[0]['days'][0] }) => {
+  const [expanded, setExpanded] = useState(true);
 
   const pillarLabel = day.pillar === 1 ? "Pillar I · Philosophy & Strategy" : day.pillar === 2 ? "Pillar II · Modern Computing" : "Synthesis";
   const pillarColor = day.pillar === 1 ? "bg-navy/10 text-navy border-navy/20" : day.pillar === 2 ? "bg-primary/10 text-primary border-primary/20" : "bg-gold/10 text-gold border-gold/20";
@@ -454,7 +454,7 @@ const Programme = () => {
                 {/* Day cards */}
                 <div className="space-y-4 max-w-5xl mx-auto">
                   {week.days.map((day, dayIdx) => (
-                    <DayCard key={day.day} day={day} isLast={dayIdx === week.days.length - 1} />
+                    <DayCard key={day.day} day={day} />
                   ))}
                 </div>
 
