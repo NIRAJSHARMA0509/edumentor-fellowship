@@ -2,6 +2,13 @@ import { GraduationCap, BookOpen, Sun, CheckCircle } from "lucide-react";
 
 const partners = [
   {
+    icon: Sun,
+    title: "Summer Programme Providers",
+    subtitle: "Short-Term Academic Courses",
+    description: "Integrate the Socratic Fellowship into your summer or winter programme offering. We provide the complete curriculum, academic staff, and content — you provide the students, campus, and facilities.",
+    highlights: ["Turnkey Curriculum", "Global Reach", "Premium Academic Offering"]
+  },
+  {
     icon: GraduationCap,
     title: "High Schools",
     subtitle: "Established Institutions",
@@ -14,13 +21,6 @@ const partners = [
     subtitle: "Higher Education Institutions",
     description: "Offer your students a transformative programme that bridges classical philosophical inquiry with advanced modern computing, enhancing academic rigour and preparing them for the demands of a complex professional world.",
     highlights: ["Academic Excellence", "Interdisciplinary Growth", "Modern Computing Fluency"]
-  },
-  {
-    icon: Sun,
-    title: "Summer Programme Providers",
-    subtitle: "Short-Term Academic Courses",
-    description: "Integrate the Socratic Fellowship into your summer or winter programme offering. We provide the complete curriculum, academic staff, and content — you provide the students, campus, and facilities.",
-    highlights: ["Turnkey Curriculum", "Global Reach", "Premium Academic Offering"]
   }
 ];
 
