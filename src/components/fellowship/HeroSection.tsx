@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/80 font-body font-light max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-up opacity-0 animation-delay-200">
-            A three-week intensive programme blending 
+            A three-week intensive programme combining 
             <span className="font-medium text-gold-light"> timeless philosophical inquiry </span> 
             with 
             <span className="font-medium text-gold-light"> advanced modern computing</span>, 
