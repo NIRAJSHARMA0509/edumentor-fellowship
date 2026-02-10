@@ -29,7 +29,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Socratic Fellowship" 
-              className="h-16 w-auto bg-white rounded-lg p-1"
+              className="h-20 w-auto"
             />
           </a>
 
