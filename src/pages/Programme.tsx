@@ -4,7 +4,8 @@ import { useState } from "react";
 import { 
   ArrowLeft, Clock, BookOpen, Brain, Cpu, Coffee, Utensils, 
   PenTool, Users, ChevronDown, ChevronUp, Sparkles, MapPin,
-  Camera, Globe, GraduationCap, Lightbulb, Target, FlaskConical
+  Camera, Globe, GraduationCap, Lightbulb, Target, FlaskConical,
+  Award, FileText, CheckCircle, Search, Scale, BarChart3, UserCheck
 } from "lucide-react";
 import Header from "@/components/fellowship/Header";
 import Footer from "@/components/fellowship/Footer";
@@ -485,6 +486,291 @@ const Programme = () => {
             </section>
           ))}
 
+          {/* Fellow Award Pathway */}
+          <section className="py-20 lg:py-28 bg-secondary" id="fellow-award">
+            <div className="container">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-gold/20 border border-gold/30">
+                  <Award className="w-4 h-4 text-gold" />
+                  <span className="text-xs font-medium text-gold tracking-wide uppercase">Optional Pathway</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
+                  The Socratic Fellow Award
+                </h2>
+                <p className="text-lg text-muted-foreground font-body leading-relaxed">
+                  An optional 12-month academic pathway for participants seeking the highest distinction. 
+                  Work one-to-one with a dedicated PhD scholar to produce a publication-ready academic article — 
+                  an exceptional credential for students aspiring to the world's leading universities.
+                </p>
+              </div>
+
+              {/* Why it matters */}
+              <div className="max-w-5xl mx-auto mb-16">
+                <div className="bg-card rounded-2xl p-8 md:p-10 shadow-card border-2 border-gold/20 relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold to-gold/50" />
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">Why Pursue the Fellow Award?</h3>
+                      <p className="text-muted-foreground font-body leading-relaxed mb-6">
+                        For students targeting admission to elite universities — Oxford, Cambridge, Ivy League, and beyond — 
+                        the Fellow Award provides a decisive advantage. A published academic article demonstrates intellectual 
+                        maturity, research capability, and genuine scholarly commitment that admissions committees actively seek.
+                      </p>
+                      <div className="space-y-3">
+                        {[
+                          "Dramatically strengthens university applications",
+                          "Demonstrates genuine research and writing ability",
+                          "Builds a published academic portfolio before university",
+                          "Develops skills in structured inquiry and argumentation",
+                          "Personalised mentorship from a PhD-level scholar",
+                        ].map((item, i) => (
+                          <div key={i} className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                            <span className="text-sm text-foreground/80">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-secondary rounded-xl p-5 border border-border/30">
+                        <div className="flex items-center gap-3 mb-2">
+                          <UserCheck className="w-5 h-5 text-gold" />
+                          <h4 className="font-display font-semibold text-foreground">1-to-1 PhD Supervision</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground">A dedicated PhD scholar works with you individually, running personalised tutorials at your own pace and based on mutual availability.</p>
+                      </div>
+                      <div className="bg-secondary rounded-xl p-5 border border-border/30">
+                        <div className="flex items-center gap-3 mb-2">
+                          <Clock className="w-5 h-5 text-gold" />
+                          <h4 className="font-display font-semibold text-foreground">12-Month Timeline</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Work at your own pace with flexible scheduling. Final submission must be completed within 12 months of programme completion.</p>
+                      </div>
+                      <div className="bg-secondary rounded-xl p-5 border border-border/30">
+                        <div className="flex items-center gap-3 mb-2">
+                          <Globe className="w-5 h-5 text-gold" />
+                          <h4 className="font-display font-semibold text-foreground">Publication Opportunity</h4>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Upon grading, exceptional work is published on the Socratic Fellowship website and through our publishing partners.</p>
+                      </div>
+                      <div className="bg-gold/10 rounded-xl p-5 border border-gold/20">
+                        <p className="text-sm font-medium text-foreground">Fellowship Award Fee: <span className="text-gold font-bold text-lg">US $2,000</span></p>
+                        <p className="text-xs text-muted-foreground mt-1">Covers 12 months of personalised PhD supervision and assessment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Writing Assessment Guide */}
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center mb-12">
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+                    Fellowship Writing Assessment Guide
+                  </h3>
+                  <p className="text-muted-foreground font-body max-w-2xl mx-auto">
+                    The goal is not memorisation — it is transferable academic thinking: structured inquiry, 
+                    balanced argument, and disciplined use of evidence.
+                  </p>
+                </div>
+
+                {/* Deliverables */}
+                <div className="grid md:grid-cols-2 gap-6 mb-10">
+                  <div className="bg-card rounded-2xl p-6 shadow-soft border border-border/50 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <FileText className="w-6 h-6 text-primary" />
+                    </div>
+                    <h4 className="font-display font-bold text-foreground text-lg mb-2">A. Journalistic Article</h4>
+                    <p className="text-xs text-primary font-medium mb-3">1,500 words (±10%) · For General Readers</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      Explain a focused question in a fair, readable way and reach a reasoned position. 
+                      Published on the Fellowship website upon selection.
+                    </p>
+                    <div className="bg-secondary/50 rounded-lg p-3 border border-border/30">
+                      <p className="text-xs font-medium text-foreground mb-1">Assessed on:</p>
+                      <p className="text-xs text-muted-foreground">Clarity + Balance + Evidence-to-claim fit</p>
+                    </div>
+                  </div>
+                  <div className="bg-card rounded-2xl p-6 shadow-soft border border-border/50 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-navy to-navy/50" />
+                    <div className="w-12 h-12 rounded-xl bg-navy/10 flex items-center justify-center mb-4">
+                      <BookOpen className="w-6 h-6 text-navy" />
+                    </div>
+                    <h4 className="font-display font-bold text-foreground text-lg mb-2">B. Academic Explanation</h4>
+                    <p className="text-xs text-navy font-medium mb-3">~3,000 words (±10%) · For Academic Review</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      Show your method: literature review, reasoning steps, and how Fellowship modules 
+                      shaped the work.
+                    </p>
+                    <div className="bg-secondary/50 rounded-lg p-3 border border-border/30">
+                      <p className="text-xs font-medium text-foreground mb-1">Assessed on:</p>
+                      <p className="text-xs text-muted-foreground">Method + Rigour + Reflective justification</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Non-negotiables */}
+                <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft border border-border/50 mb-10">
+                  <h4 className="font-display font-bold text-foreground text-lg mb-6 flex items-center gap-2">
+                    <Scale className="w-5 h-5 text-primary" />
+                    Non-Negotiables (Both Documents)
+                  </h4>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {[
+                      "A single, well-defined research question (not a broad theme)",
+                      "Visible balance of arguments: steelman at least one serious counter-position",
+                      "Clear distinction between normative claims (what ought to be) and empirical claims (what is/likely is)",
+                      "Sources are signposted and attributable; no 'floating facts'",
+                      "Intellectual honesty: state uncertainties, constraints, and what would change your mind",
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-start gap-3 bg-secondary/50 rounded-xl p-4 border border-border/30">
+                        <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Recommended Workflow */}
+                <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft border border-border/50 mb-10">
+                  <h4 className="font-display font-bold text-foreground text-lg mb-6 flex items-center gap-2">
+                    <Target className="w-5 h-5 text-gold" />
+                    Recommended Workflow (10 Steps)
+                  </h4>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {[
+                      { step: 1, title: "Choose & Narrow a Question", desc: "Pick a topic you genuinely care about, then narrow to one decision, one policy lever, or one contested claim." },
+                      { step: 2, title: "Define Terms & Scope", desc: "Write a scope paragraph with key definitions, jurisdiction/context, time horizon, and what you are NOT covering." },
+                      { step: 3, title: "Build a Socratic Question Grid", desc: "Use structured inquiry: assumptions, definitions, mechanisms, evidence, alternatives, and implications. Aim for 12–20 questions." },
+                      { step: 4, title: "Run the Dual-Lens Test", desc: "Write two mini-analyses: Platonic/normative (ideals, values, justice) and Aristotelian/empirical (institutions, incentives, trade-offs)." },
+                      { step: 5, title: "Light but Disciplined Literature Review", desc: "Target ~8–12 credible sources. Intelligent selection, evaluation, and synthesis. Keep an annotated bibliography." },
+                      { step: 6, title: "Form a Working Hypothesis", desc: "Write: 'My provisional claim is…'. Then write at least two plausible alternatives. Decide what evidence would support or falsify each." },
+                      { step: 7, title: "Create an Argument Map", desc: "List your conclusion, 3–5 supporting reasons, the best counterargument(s), then your reply. If you can't map it, you can't write it." },
+                      { step: 8, title: "Draft the Journalistic Article", desc: "Write for an intelligent non-specialist. Use a hook, a clear 'nut graf', and short sections. Show reasoning without sounding like an essay." },
+                      { step: 9, title: "Draft the Academic Explanation", desc: "Show the research journey: how you searched, what you included/excluded, how you evaluated sources, and how modules shaped each move." },
+                      { step: 10, title: "Edit Like a Professional", desc: "Do a 'structure pass' (logic), then a 'clarity pass' (readability), then a 'truth pass' (fact-check + citations). Remove filler." },
+                    ].map((item) => (
+                      <div key={item.step} className="flex gap-4 bg-secondary/50 rounded-xl p-4 border border-border/30">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center">
+                          <span className="text-sm font-bold text-gold">{item.step}</span>
+                        </div>
+                        <div>
+                          <h5 className="font-display font-semibold text-foreground text-sm mb-1">{item.title}</h5>
+                          <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Article Structure */}
+                <div className="grid md:grid-cols-2 gap-6 mb-10">
+                  <div className="bg-card rounded-2xl p-6 shadow-soft border border-border/50">
+                    <h4 className="font-display font-bold text-foreground text-lg mb-4 flex items-center gap-2">
+                      <FileText className="w-5 h-5 text-primary" />
+                      Article Structure (1,500 words)
+                    </h4>
+                    <div className="space-y-2">
+                      {[
+                        { section: "Title + Subhead", words: "1–2 lines", purpose: "State the question and tension" },
+                        { section: "Hook", words: "80–150 words", purpose: "Concrete scene/statistic/anecdote" },
+                        { section: "Nut Graf", words: "80–120 words", purpose: "What you'll argue and why now" },
+                        { section: "Background", words: "150–250 words", purpose: "Define the issue, actors, why it's contested" },
+                        { section: "Argument A (steelman)", words: "250–350 words", purpose: "Best case for the opposing view" },
+                        { section: "Argument B (steelman)", words: "250–350 words", purpose: "Best case for your view" },
+                        { section: "Synthesis / Trade-offs", words: "250–350 words", purpose: "Reconcile lenses; show conditions" },
+                        { section: "Conclusion", words: "120–200 words", purpose: "Your position + what would change your mind" },
+                        { section: "Selected Sources", words: "6–12 items", purpose: "Links or citations for follow-up" },
+                      ].map((row, i) => (
+                        <div key={i} className="flex items-start gap-3 py-2 border-b border-border/30 last:border-0">
+                          <div className="flex-1 min-w-0">
+                            <span className="text-sm font-medium text-foreground">{row.section}</span>
+                            <span className="text-xs text-muted-foreground ml-2">({row.words})</span>
+                          </div>
+                          <p className="text-xs text-muted-foreground text-right">{row.purpose}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-card rounded-2xl p-6 shadow-soft border border-border/50">
+                    <h4 className="font-display font-bold text-foreground text-lg mb-4 flex items-center gap-2">
+                      <BookOpen className="w-5 h-5 text-navy" />
+                      Academic Explanation Contents (~3,000 words)
+                    </h4>
+                    <div className="space-y-2">
+                      {[
+                        "Abstract (150–200 words)",
+                        "Research question + scope paragraph (include definitions and boundaries)",
+                        "Methodology (search strategy, inclusion/exclusion, reliability assessment, ethics)",
+                        "Literature review (thematic synthesis, not a list)",
+                        "Argument map (premises, inference steps, counterarguments, replies)",
+                        "Module integration: how the Fellowship curriculum shaped your work",
+                        "Limitations + further research (what you would do with more time/data)",
+                        "Bibliography / references",
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 py-2 border-b border-border/30 last:border-0">
+                          <span className="flex-shrink-0 w-6 h-6 rounded-full bg-navy/10 flex items-center justify-center text-xs font-semibold text-navy">{i + 1}</span>
+                          <span className="text-sm text-muted-foreground">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Assessment Rubric */}
+                <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft border border-border/50 mb-10">
+                  <h4 className="font-display font-bold text-foreground text-lg mb-6 flex items-center gap-2">
+                    <BarChart3 className="w-5 h-5 text-primary" />
+                    Assessment Rubric — What 'Excellent' Looks Like
+                  </h4>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {[
+                      { criterion: "Question & Scope", indicator: "Precise, narrow, and contestable; boundaries explicit; terms defined." },
+                      { criterion: "Research & Sources", indicator: "Credible, diverse sources; quality assessed; synthesis demonstrates understanding." },
+                      { criterion: "Argument Quality", indicator: "Clear thesis; valid inferences; strong structure; alternatives and counterarguments steelmanned." },
+                      { criterion: "Dual-Lens Reasoning", indicator: "Normative and empirical claims distinguished and thoughtfully integrated." },
+                      { criterion: "Writing & Communication", indicator: "Readable, coherent, purposeful; jargon controlled; transitions and signposting strong." },
+                      { criterion: "Integrity & Reflection", indicator: "Uncertainties stated; limitations owned; no overclaiming; ethical issues recognised." },
+                    ].map((item, i) => (
+                      <div key={i} className="bg-secondary/50 rounded-xl p-4 border border-border/30">
+                        <h5 className="font-display font-semibold text-foreground text-sm mb-2">{item.criterion}</h5>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{item.indicator}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Submission Checklist */}
+                <div className="bg-card rounded-2xl p-6 md:p-8 shadow-soft border-2 border-gold/20">
+                  <h4 className="font-display font-bold text-foreground text-lg mb-6 flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-gold" />
+                    Submission Checklist
+                  </h4>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {[
+                      "My question is one sentence and contains a concrete decision/claim",
+                      "My article has at least one serious counterargument treated fairly (steelman)",
+                      "I clearly separate empirical claims from normative claims",
+                      "Every non-obvious factual claim is attributable to a source",
+                      "My explanation includes: search strategy, inclusion/exclusion, and a credibility check",
+                      "I have a visible argument map (even if only as bullet points)",
+                      "I explicitly show how at least 5 of the 7 programme days affected my work",
+                      "I removed filler and tightened paragraphs (read aloud test)",
+                      "Files are named correctly and include my full name and cohort",
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="flex-shrink-0 w-5 h-5 rounded border-2 border-gold/40 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* CTA */}
           <section className="py-16 gradient-hero">
             <div className="container text-center">
@@ -492,7 +778,7 @@ const Programme = () => {
                 Ready to Transform Minds?
               </h2>
               <p className="text-primary-foreground/70 font-body mb-8 max-w-2xl mx-auto">
-                Partner with us to bring this rigorous 15-day academic experience to your institution.
+                Partner with us to bring this rigorous academic experience to your institution.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 

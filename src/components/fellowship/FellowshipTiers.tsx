@@ -64,25 +64,29 @@ const FellowshipTiers = () => {
             <p className="text-gold font-medium text-sm mb-4">Academic Submission Required</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
               For participants seeking the highest distinction. After completing the three-week programme, 
-              Fellows undertake a 15,000-word academic dissertation reflecting on the concepts learned, 
-              supervised by a dedicated academic supervisor over nine additional months.
+              Fellows are paired with a dedicated PhD scholar for one-to-one personalised tutorials to produce 
+              a publication-ready academic article — an exceptional credential for elite university admissions.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-foreground/80">15,000-word supervised dissertation</span>
+                <span className="text-sm text-foreground/80">1,500-word journalistic article + ~3,000-word academic explanation</span>
               </div>
               <div className="flex items-start gap-3">
                 <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-foreground/80">Nine months to complete after the programme</span>
+                <span className="text-sm text-foreground/80">12 months to complete at your own pace</span>
               </div>
               <div className="flex items-start gap-3">
                 <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-foreground/80">Dedicated academic supervisor with tutorials</span>
+                <span className="text-sm text-foreground/80">Dedicated PhD scholar with personalised 1-to-1 tutorials</span>
               </div>
               <div className="flex items-start gap-3">
                 <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-foreground/80">US $2,000 for supervision and assessment</span>
+                <span className="text-sm text-foreground/80">Published on Fellowship website and partner platforms upon selection</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
+                <span className="text-sm text-foreground/80">US $2,000 for the entire year of supervision</span>
               </div>
             </div>
           </div>

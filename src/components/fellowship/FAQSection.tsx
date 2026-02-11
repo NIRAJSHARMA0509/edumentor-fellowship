@@ -28,15 +28,23 @@ const faqs = [
     questions: [
       {
         question: "What credentials do participants receive?",
-        answer: "There are two tiers of recognition. All participants who complete the three-week programme receive a Socratic Fellowship Summer Programme Certificate and a personal reference letter from their tutor. Those who wish to earn the full Socratic Fellowship Award must complete an additional 15,000-word academic dissertation."
+        answer: "There are two tiers of recognition. All participants who complete the three-week programme receive a Socratic Fellowship Summer Programme Certificate and a personal reference letter from their tutor. Those who wish to earn the full Socratic Fellow Award must complete an additional academic submission: a 1,500-word journalistic article and a ~3,000-word academic explanation, supervised by a dedicated PhD scholar."
       },
       {
-        question: "What is required for the full Fellowship Award?",
-        answer: "After completing the three-week intensive programme, participants may opt to undertake a 15,000-word academic dissertation reflecting on the concepts learned. This is supervised by a dedicated academic supervisor, with tutorials continuing over nine additional months. The cost for this academic supervision is US $2,000."
+        question: "What is the Socratic Fellow Award?",
+        answer: "The Fellow Award is an optional 12-month academic pathway for participants seeking the highest distinction. After the three-week intensive, you are paired with a dedicated PhD scholar who works with you one-to-one through personalised tutorials. Together, you produce a publication-ready journalistic article (1,500 words) and an academic explanation (~3,000 words). Work is self-paced, based on mutual availability, with final submission due within 12 months. The fee is US $2,000 for the entire year of supervision."
       },
       {
-        question: "Is the dissertation mandatory?",
-        answer: "No. The dissertation is entirely optional. Participants who are content with the Summer Programme Certificate and tutor reference are not required to pursue the full Fellowship Award. It is designed for those seeking the highest level of academic distinction."
+        question: "Why is the Fellow Award valuable for university applications?",
+        answer: "For students targeting elite universities — Oxford, Cambridge, Ivy League, and beyond — the Fellow Award provides a decisive advantage. A published academic article demonstrates intellectual maturity, research capability, and genuine scholarly commitment. It dramatically strengthens university applications by building a published academic portfolio before university and developing skills in structured inquiry and argumentation."
+      },
+      {
+        question: "What happens after the final submission is graded?",
+        answer: "Once your final submission is graded, exceptional work is published on the Socratic Fellowship website and through our publishing partners. This gives Fellows a tangible, public academic credential that can be referenced in university applications and beyond."
+      },
+      {
+        question: "Is the Fellow Award mandatory?",
+        answer: "No. The Fellow Award is entirely optional. Participants who are content with the Summer Programme Certificate and tutor reference are not required to pursue it. It is designed for those seeking the highest level of academic distinction and a competitive edge in university admissions."
       }
     ]
   },
