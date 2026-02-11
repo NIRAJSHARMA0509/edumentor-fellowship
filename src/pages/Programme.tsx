@@ -355,7 +355,7 @@ const Programme = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-gold/20 border border-gold/30 backdrop-blur-sm">
                   <Sparkles className="w-4 h-4 text-gold" />
-                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">15-Day Intensive</span>
+                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">15-Day Intensive + Optional 12-Month Fellow Award</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight">
                   Academic Programme Calendar
@@ -378,6 +378,25 @@ const Programme = () => {
                       <div className="text-xs text-primary-foreground/50 font-medium mt-1">{s.label}</div>
                     </div>
                   ))}
+                </div>
+
+                {/* Fellow Award Summary */}
+                <div className="mt-10 bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-6 border border-gold/20 max-w-3xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Award className="w-5 h-5 text-gold" />
+                    <h3 className="font-display font-semibold text-primary-foreground text-lg">Optional: Socratic Fellowship Award</h3>
+                  </div>
+                  <p className="text-sm text-primary-foreground/60 leading-relaxed mb-4">
+                    Continue beyond the intensive with a 12-month academic pathway. Work one-to-one with a PhD scholar 
+                    to produce a publication-ready article, earn the title of Fellow, and build an exceptional credential 
+                    for elite university admissions.
+                  </p>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-primary-foreground/50">
+                    <span>📝 1,500-word article + ~3,000-word explanation</span>
+                    <span>🎓 1-to-1 PhD supervision</span>
+                    <span>📖 Published upon selection</span>
+                    <span>💰 US $2,000 for 12 months</span>
+                  </div>
                 </div>
               </div>
             </div>
