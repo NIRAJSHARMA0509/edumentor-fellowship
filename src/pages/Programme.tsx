@@ -589,7 +589,7 @@ const Programme = () => {
                     </p>
                     <div className="bg-secondary/50 rounded-lg p-3 border border-border/30">
                       <p className="text-xs font-medium text-foreground mb-1">Assessed on:</p>
-                      <p className="text-xs text-muted-foreground">Clarity + Balance + Evidence-to-claim fit</p>
+                      <p className="text-xs text-muted-foreground">Clarity + Balance + Evidence-to-claim fit + Quality of Storytelling</p>
                     </div>
                   </div>
                   <div className="bg-card rounded-2xl p-6 shadow-soft border border-border/50 relative overflow-hidden">
