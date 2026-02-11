@@ -46,6 +46,14 @@ const FellowshipTiers = () => {
                 <ArrowRight className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-foreground/80">No selection process required</span>
               </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span className="text-sm text-foreground/80">Minimum age: 15 years</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span className="text-sm text-foreground/80">English proficiency: Good</span>
+              </div>
             </div>
           </div>
 
