@@ -355,7 +355,7 @@ const Programme = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-gold/20 border border-gold/30 backdrop-blur-sm">
                   <Sparkles className="w-4 h-4 text-gold" />
-                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">15-Day Intensive + Optional 12-Month Fellow Award</span>
+                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">3-Week Intensive + Optional 12-Month Fellow Award</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight">
                   Academic Programme Calendar
