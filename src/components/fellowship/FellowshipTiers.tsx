@@ -25,7 +25,7 @@ const FellowshipTiers = () => {
               <FileText className="w-7 h-7 text-primary" />
             </div>
             <h3 className="text-2xl font-display font-bold text-foreground mb-2">
-              Socratic Fellowship Summer Programme Certificate
+              Socratic Fellowship Certificate
             </h3>
             <p className="text-primary font-medium text-sm mb-4">Three-Week Intensive</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
@@ -59,13 +59,13 @@ const FellowshipTiers = () => {
               <Award className="w-7 h-7 text-gold" />
             </div>
             <h3 className="text-2xl font-display font-bold text-foreground mb-2">
-              Full Socratic Fellowship Award
+              Socratic Fellowship Award
             </h3>
-            <p className="text-gold font-medium text-sm mb-4">Academic Submission Required</p>
+            <p className="text-gold font-medium text-sm mb-4">Academic Submission Required · Earn the Title of Fellow</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
               For participants seeking the highest distinction. After completing the three-week programme, 
               Fellows are paired with a dedicated PhD scholar for one-to-one personalised tutorials to produce 
-              a publication-ready academic article — an exceptional credential for elite university admissions.
+              a publication-ready academic article — earn the prestigious title of Fellow.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
