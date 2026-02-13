@@ -70,7 +70,7 @@ const PartnerEnquiry = () => {
                 <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-primary-foreground text-sm">Flexible Scheduling</h4>
-                  <p className="text-primary-foreground/60 text-xs">Three-week programme delivered during summer or winter breaks.</p>
+                  <p className="text-primary-foreground/60 text-xs">Two-week intensive delivered during summer or winter breaks.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

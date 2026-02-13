@@ -14,11 +14,10 @@ const pillar1Modules = [
 ];
 
 const pillar2Modules = [
-  { icon: Bot, title: "AI for Non-Programmers", desc: "Gaining foundational understanding of AI principles without the need for coding." },
   { icon: Sparkles, title: "Basics of Machine Learning", desc: "Decoding the core concepts of ML and its transformative applications." },
   { icon: MessageSquare, title: "Decoding Generative AI", desc: "Understanding the technology behind tools like large language models." },
   { icon: Bot, title: "Agentic AI", desc: "Exploring the future of autonomous systems and how to leverage them strategically." },
-  { icon: Rocket, title: "Sustained Innovation", desc: "Developing frameworks for continuously integrating and leveraging emerging technologies." },
+  { icon: Rocket, title: "The Digital Philosopher Challenge", desc: "An immersive team challenge — research a modern philosopher and showcase Socratic questioning through digital interaction." },
 ];
 
 const TutorCard = ({ name, title, image }: { name: string; title: string; image: string }) => (

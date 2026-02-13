@@ -4,16 +4,16 @@ const FellowshipTiers = () => {
   return (
     <section className="py-20 lg:py-28 bg-secondary">
       <div className="container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-primary font-semibold text-sm tracking-widest uppercase mb-4">
-            Two Pathways
+            The Complete Programme
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
             Fellowship Credentials
           </h2>
           <p className="text-lg text-muted-foreground font-body">
-            Participants can earn recognition at two distinct levels, 
-            each reflecting a different depth of academic commitment.
+            The Socratic Fellowship is a unified programme — a two-week intensive followed by 
+            12 months of PhD scholar-led academic mentorship, culminating in the prestigious Fellow Award.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ const FellowshipTiers = () => {
             <h3 className="text-2xl font-display font-bold text-foreground mb-2">
               Socratic Fellowship Award
             </h3>
-            <p className="text-gold font-medium text-sm mb-4">Academic Submission Required · Earn the Title of Fellow</p>
+            <p className="text-gold font-medium text-sm mb-4">Academic Submission Required · Earn the Title of Fellow · Included in Programme</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
               For participants seeking the highest distinction. After completing the two-week programme, 
               Fellows are paired with a dedicated PhD scholar for one-to-one personalised tutorials to produce 
@@ -94,7 +94,7 @@ const FellowshipTiers = () => {
               </div>
               <div className="flex items-start gap-3">
                 <ArrowRight className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-foreground/80">US $2,000 for the entire year of supervision</span>
+                <span className="text-sm text-foreground/80">Included as part of the full Socratic Fellowship programme</span>
               </div>
             </div>
           </div>

@@ -140,19 +140,6 @@ const topics = [
   },
   {
     topic: 8,
-    title: "AI for Non-Programmers",
-    theme: "Gaining foundational understanding of AI principles without the need for coding.",
-    modules: [
-      "Demystifying the Black Box: Statistical vs. Symbolic AI",
-      "Pattern Recognition and Large Scale Data Sets",
-      "AI Ethics: Bias, Transparency, and Social Impact"
-    ],
-    caseStudy: { type: "Case Study", title: "AI in Healthcare — Predictive Diagnostics and Ethics" },
-    writingTask: "Develop an ethical framework for non-technical managers overseeing AI deployments.",
-    pillar: 2
-  },
-  {
-    topic: 9,
     title: "Basics of Machine Learning",
     theme: "Decoding the core concepts of ML and its transformative applications.",
     modules: [
@@ -165,7 +152,7 @@ const topics = [
     pillar: 2
   },
   {
-    topic: 10,
+    topic: 9,
     title: "Decoding Generative AI",
     theme: "Understanding the technology behind tools like large language models (LLMs).",
     modules: [
@@ -178,7 +165,7 @@ const topics = [
     pillar: 2
   },
   {
-    topic: 11,
+    topic: 10,
     title: "Agentic AI",
     theme: "Exploring the future of autonomous systems and how to leverage them strategically.",
     modules: [
@@ -188,6 +175,19 @@ const topics = [
     ],
     caseStudy: { type: "Case Study", title: "Auto-GPT and the Future of Autonomous Task Management" },
     writingTask: "Design a multi-agent workflow to solve a complex multi-stage business operation.",
+    pillar: 2
+  },
+  {
+    topic: 11,
+    title: "The Digital Philosopher Challenge",
+    theme: "An immersive team challenge — research a modern philosopher, build a digital knowledge repository using the Socratic method, and showcase the art of questioning through interactive digital engagement.",
+    modules: [
+      "Team Assignment: Select a Key Modern Philosopher and Define Your Research Strategy",
+      "Building the Digital Repository: Curating and Structuring Philosophical Knowledge",
+      "The Socratic Showcase: Demonstrating Digital Interrogation of a Philosopher's Ideas"
+    ],
+    caseStudy: { type: "Interactive Challenge", title: "Question the Philosopher — Live Digital Interaction and Group Presentations" },
+    writingTask: "Reflective report on how the Socratic method enhanced your team's ability to critically engage with a philosopher's work through digital tools.",
     pillar: 2
   },
 ];
@@ -275,7 +275,7 @@ const Programme = () => {
     <>
       <Helmet>
         <title>Programme Calendar | Socratic Fellowship</title>
-        <meta name="description" content="Explore the 2-week intensive Socratic Fellowship programme — a rigorous curriculum integrating cognitive science, Western philosophy, strategic frameworks, and advanced AI applications." />
+        <meta name="description" content="Explore the Socratic Fellowship programme — a two-week intensive plus 12 months of PhD scholar-led mentorship, integrating cognitive science, Western philosophy, strategic frameworks, and advanced AI applications." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -295,14 +295,15 @@ const Programme = () => {
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-gold/20 border border-gold/30 backdrop-blur-sm">
                   <Sparkles className="w-4 h-4 text-gold" />
-                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">2-Week Intensive + Optional 12-Month Fellow Award</span>
+                  <span className="text-xs font-medium text-gold-light tracking-wide uppercase">2-Week Intensive + 12-Month PhD Scholar-Led Programme</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight">
                   Academic Programme Calendar
                 </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/70 font-body max-w-3xl leading-relaxed">
                   A rigorous curriculum integrating cognitive science, Western philosophy, strategic frameworks, 
-                  and advanced Artificial Intelligence applications — delivered across two transformative weeks.
+                  and advanced Artificial Intelligence applications — a two-week intensive followed by 12 months 
+                  of PhD scholar-led academic mentorship.
                 </p>
 
                 {/* Stats */}
@@ -310,7 +311,7 @@ const Programme = () => {
                   {[
                     { num: "9", label: "Teaching Days" },
                     { num: "11", label: "Topics Covered" },
-                    { num: "30+", label: "Lecture Modules" },
+                    { num: "12", label: "Months Mentorship" },
                     { num: "11", label: "Writing Tasks" },
                   ].map(s => (
                     <div key={s.label} className="text-center">
@@ -324,18 +325,17 @@ const Programme = () => {
                 <div className="mt-10 bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-6 border border-gold/20 max-w-3xl">
                   <div className="flex items-center gap-3 mb-3">
                     <Award className="w-5 h-5 text-gold" />
-                    <h3 className="font-display font-semibold text-primary-foreground text-lg">Optional: Socratic Fellowship Award</h3>
+                    <h3 className="font-display font-semibold text-primary-foreground text-lg">The Socratic Fellowship Award</h3>
                   </div>
                   <p className="text-sm text-primary-foreground/60 leading-relaxed mb-4">
-                    Continue beyond the intensive with a 12-month academic pathway. Work one-to-one with a PhD scholar 
-                    to produce a publication-ready article, earn the title of Fellow, and build an exceptional credential 
-                    for elite university admissions.
+                    Following the two-week intensive, every Fellow is paired with a dedicated PhD scholar for 
+                    12 months of personalised academic mentorship — producing a publication-ready article and 
+                    earning the prestigious title of Socratic Fellow.
                   </p>
                   <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-primary-foreground/50">
                     <span>📝 1,500-word article + ~3,000-word explanation</span>
                     <span>🎓 1-to-1 PhD supervision</span>
                     <span>📖 Published upon selection</span>
-                    <span>💰 US $2,000 for 12 months</span>
                   </div>
                 </div>
               </div>
@@ -455,7 +455,7 @@ const Programme = () => {
                   Academic Topics
                 </h2>
                 <p className="text-muted-foreground font-body">
-                  Eleven topics spanning philosophy, strategy, and modern computing — delivered across the programme at the discretion of the academic team.
+                  Eleven topics spanning philosophy, strategy, modern computing, and an immersive team challenge — delivered across the programme at the discretion of the academic team.
                 </p>
               </div>
 
@@ -485,7 +485,7 @@ const Programme = () => {
                   </div>
                   <div>
                     <h3 className="text-xl md:text-2xl font-display font-bold text-foreground">Pillar II: Modern Computing & Technical Fluency</h3>
-                    <p className="text-muted-foreground font-body text-sm">Topics 8–11</p>
+                    <p className="text-muted-foreground font-body text-sm">Topics 8–11 (includes Interactive Challenge)</p>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -503,14 +503,14 @@ const Programme = () => {
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-gold/20 border border-gold/30">
                   <Award className="w-4 h-4 text-gold" />
-                  <span className="text-xs font-medium text-gold tracking-wide uppercase">Optional Pathway</span>
+                  <span className="text-xs font-medium text-gold tracking-wide uppercase">12-Month Academic Pathway</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
                   The Socratic Fellow Award
                 </h2>
                 <p className="text-lg text-muted-foreground font-body leading-relaxed">
-                  An optional 12-month academic pathway for participants seeking the highest distinction. 
-                  Work one-to-one with a dedicated PhD scholar to produce a publication-ready academic article — 
+                  Following the two-week intensive, every Fellow is paired with a dedicated PhD scholar for 
+                  12 months of personalised academic mentorship. Produce a publication-ready academic article — 
                   an exceptional credential for students aspiring to the world's leading universities.
                 </p>
               </div>
@@ -521,7 +521,7 @@ const Programme = () => {
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold to-gold/50" />
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">Why Pursue the Fellow Award?</h3>
+                      <h3 className="text-2xl font-display font-bold text-foreground mb-4">The Fellow Award Journey</h3>
                       <p className="text-muted-foreground font-body leading-relaxed mb-6">
                         For students targeting admission to elite universities — Oxford, Cambridge, Ivy League, and beyond — 
                         the Fellow Award provides a decisive advantage. A published academic article demonstrates intellectual 
@@ -563,10 +563,6 @@ const Programme = () => {
                           <h4 className="font-display font-semibold text-foreground">Publication Opportunity</h4>
                         </div>
                         <p className="text-sm text-muted-foreground">Upon grading, exceptional work is published on the Socratic Fellowship website and through our publishing partners.</p>
-                      </div>
-                      <div className="bg-gold/10 rounded-xl p-5 border border-gold/20">
-                        <p className="text-sm font-medium text-foreground">Fellowship Award Fee: <span className="text-gold font-bold text-lg">US $2,000</span></p>
-                        <p className="text-xs text-muted-foreground mt-1">Covers 12 months of personalised PhD supervision and assessment</p>
                       </div>
                     </div>
                   </div>
