@@ -27,9 +27,9 @@ const FellowshipTiers = () => {
             <h3 className="text-2xl font-display font-bold text-foreground mb-2">
               Socratic Fellowship Certificate
             </h3>
-            <p className="text-primary font-medium text-sm mb-4">Three-Week Intensive</p>
+            <p className="text-primary font-medium text-sm mb-4">Two-Week Intensive</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-              Awarded upon successful completion of the three-week intensive programme at your 
+              Awarded upon successful completion of the two-week intensive programme at your 
               chosen campus. Participants receive a formal certificate and a personal reference 
               letter from their tutor.
             </p>
@@ -71,7 +71,7 @@ const FellowshipTiers = () => {
             </h3>
             <p className="text-gold font-medium text-sm mb-4">Academic Submission Required · Earn the Title of Fellow</p>
             <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-              For participants seeking the highest distinction. After completing the three-week programme, 
+              For participants seeking the highest distinction. After completing the two-week programme, 
               Fellows are paired with a dedicated PhD scholar for one-to-one personalised tutorials to produce 
               a publication-ready academic article — earn the prestigious title of Fellow.
             </p>
