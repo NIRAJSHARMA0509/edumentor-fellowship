@@ -14,12 +14,10 @@ const pillar1Modules = [
 ];
 
 const pillar2Modules = [
-  { icon: Cpu, title: "Introduction to Modern Computing", desc: "Understanding the architectural and conceptual fundamentals of today's digital world." },
   { icon: Bot, title: "AI for Non-Programmers", desc: "Gaining foundational understanding of AI principles without the need for coding." },
   { icon: Sparkles, title: "Basics of Machine Learning", desc: "Decoding the core concepts of ML and its transformative applications." },
   { icon: MessageSquare, title: "Decoding Generative AI", desc: "Understanding the technology behind tools like large language models." },
   { icon: Bot, title: "Agentic AI", desc: "Exploring the future of autonomous systems and how to leverage them strategically." },
-  { icon: MessageSquare, title: "Natural Language Programming", desc: "Mastering the art of communicating with and directing advanced AI tools." },
   { icon: Rocket, title: "Sustained Innovation", desc: "Developing frameworks for continuously integrating and leveraging emerging technologies." },
 ];
 
