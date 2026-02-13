@@ -21,9 +21,9 @@ import {
 
 const dailySchedule = [
   { time: "08:30 – 09:00", label: "Breakfast", desc: "Breakfast options", icon: Coffee, color: "bg-gold/10 text-gold", isBreak: true },
-  { time: "09:15 – 13:00", label: "Morning Session", desc: "Lectures & Case Study Preparation", icon: BookOpen, color: "bg-primary/10 text-primary" },
+  { time: "09:15 – 13:00", label: "Morning Session", desc: "Lecture & Group Discussion", icon: BookOpen, color: "bg-primary/10 text-primary" },
   { time: "13:00 – 14:00", label: "Lunch", desc: "Lunch options", icon: Utensils, color: "bg-gold/10 text-gold", isBreak: true },
-  { time: "14:15 – 17:45", label: "Afternoon Session", desc: "Live Group Tutorials & Academic Writing", icon: Users, color: "bg-navy/10 text-navy" },
+  { time: "14:15 – 17:45", label: "Afternoon Session", desc: "Case Study & Academic Writing", icon: Users, color: "bg-navy/10 text-navy" },
   { time: "18:00 – 19:00", label: "Dinner", desc: "Dinner options", icon: Utensils, color: "bg-gold/10 text-gold", isBreak: true },
   { time: "19:30 – 21:30", label: "Evening Activities", desc: "Themed social and recreational activities", icon: Sparkles, color: "bg-primary/10 text-primary" },
   { time: "22:00", label: "Lights Out", desc: "", icon: Moon, color: "bg-muted text-muted-foreground", isBreak: true },
@@ -31,19 +31,19 @@ const dailySchedule = [
 
 const itinerary = [
   { day: "Wednesday", morning: "Student Arrivals", afternoon: "Activities", evening: "House Games", isArrival: true },
-  { day: "Thursday", morning: "Lessons", afternoon: "Activities", evening: "Picture Challenge / Football / Badminton / Pamper Night" },
-  { day: "Friday", morning: "Oxford Sightseeing", afternoon: "University Tour", evening: "Quiz", isTrip: true },
-  { day: "Saturday", morning: "Lessons", afternoon: "Activities", evening: "Big King / Baking / Movie / Dodgeball" },
-  { day: "Sunday", morning: "Lessons", afternoon: "Cambridge Sightseeing", evening: "Trashion Show", isTrip: true },
-  { day: "Monday", morning: "Lessons", afternoon: "Cambridge Picture Challenge", evening: "Sardines / Movie / Football / Basketball" },
-  { day: "Tuesday", morning: "Lessons", afternoon: "River Cam Punting & Shopping", evening: "Graduation / Talent Show / Party", isTrip: true },
-  { day: "Wednesday", morning: "English Workshop", afternoon: "Activities", evening: "Team Building", isWeek2Start: true },
-  { day: "Thursday", morning: "Lessons", afternoon: "Activities", evening: "Murder Mystery / Tennis / Movie / Bracelet Making" },
+  { day: "Thursday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Picture Challenge / Football / Badminton / Pamper Night" },
+  { day: "Friday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Quiz" },
+  { day: "Saturday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Big King / Baking / Movie / Dodgeball" },
+  { day: "Sunday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Trashion Show" },
+  { day: "Monday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Sardines / Movie / Football / Basketball" },
+  { day: "Tuesday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Graduation / Talent Show / Party" },
+  { day: "Wednesday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Team Building", isWeek2Start: true },
+  { day: "Thursday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Murder Mystery / Tennis / Movie / Bracelet Making" },
   { day: "Friday", morning: "London Sightseeing Tour with River Cruise", afternoon: "London Sightseeing Tour with River Cruise", evening: "Quiz", isTrip: true, isHalfDay: true },
-  { day: "Saturday", morning: "Lessons", afternoon: "Activities", evening: "Movie / Football / Table Tennis" },
-  { day: "Sunday", morning: "Lessons", afternoon: "Picture Challenge – Cambridge", evening: "Team V Team" },
-  { day: "Monday", morning: "Lessons", afternoon: "Cambridge University Tour", evening: "Music Bingo", isTrip: true },
-  { day: "Tuesday", morning: "Lessons", afternoon: "Cambridge Sightseeing + Market Square", evening: "Graduation / Talent Show / Party", isTrip: true },
+  { day: "Saturday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Movie / Football / Table Tennis" },
+  { day: "Sunday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Team V Team" },
+  { day: "Monday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Music Bingo" },
+  { day: "Tuesday", morning: "Lecture & Group Discussion", afternoon: "Case Study & Academic Writing", evening: "Graduation / Talent Show / Party" },
   { day: "Wednesday", morning: "Student Departures", afternoon: "", evening: "", isDeparture: true },
 ];
 
