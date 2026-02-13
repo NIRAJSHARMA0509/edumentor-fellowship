@@ -17,7 +17,7 @@ const Index = () => {
         <title>Socratic Fellowship | Cultivating Intellectual Leaders</title>
         <meta 
           name="description" 
-          content="The Socratic Fellowship is a prestigious three-week academic programme combining timeless philosophical inquiry with advanced modern computing, delivered through global campus partners." 
+          content="The Socratic Fellowship is a prestigious two-week intensive combined with 12 months of PhD scholar-led mentorship, fusing timeless philosophical inquiry with advanced modern computing, delivered through global campus partners." 
         />
         <meta name="keywords" content="Socratic Fellowship, academic programme, Oxford tutorials, intellectual leadership, AI education, critical thinking, summer programme" />
       </Helmet>
